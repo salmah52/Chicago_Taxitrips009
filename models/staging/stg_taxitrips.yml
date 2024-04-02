@@ -1,0 +1,109 @@
+# models/staging/stg_taxitrips.yml
+
+version: 2
+
+models:
+  - name: stg_taxitrips
+    description: "Staging table for taxitrips data"
+    columns:
+      - name: trip_id
+        description: "A unique identifier for the trip."
+        tests:
+          - not_null
+          - unique
+        data_type: "text"
+       
+      - name: taxi_id
+        description: "A unique identifier for the taxi."
+        tests:
+          - not_null
+        data_type: "text"
+       
+      - name: trip_start_timestamp
+        description: "When the trip started, rounded to the nearest 15 minutes."
+        tests:
+          - not_null
+        data_type: "timestamp"
+        
+      - name: trip_end_timestamp
+        description: "When the trip ended, rounded to the nearest 15 minutes."
+        tests:
+          - not_null
+        data_type: "timestamp"
+       
+      - name: trip_seconds
+        description: "Time of the trip in seconds."
+        data_type: "number"
+       
+      - name: trip_miles
+        description: "Distance of the trip in miles."
+        data_type: "number"
+       
+      - name: pickup_census_tract
+        description: "The Census Tract where the trip began. This column often will be blank for locations outside Chicago."
+        data_type: "text"
+      
+      - name: dropoff_census_tract
+        description: "The Census Tract where the trip ended. This column often will be blank for locations outside Chicago."
+        data_type: "text"
+       
+      - name: pickup_community_area
+        description: "The Community Area where the trip began. This column will be blank for locations outside Chicago."
+        data_type: "number"
+        
+      - name: dropoff_community_area
+        description: "The Community Area where the trip ended. This column will be blank for locations outside Chicago."
+        data_type: "number"
+      
+      - name: fare
+        description: "The fare for the trip."
+        data_type: "number"
+    
+      - name: tips
+        description: "The tip for the trip. Cash tips generally will not be recorded."
+        data_type: "number"
+      
+      - name: tolls
+        description: "The tolls for the trip."
+        data_type: "number"
+      
+      - name: extras
+        description: "Extra charges for the trip."
+        data_type: "number"
+        
+      - name: trip_total
+        description: "Total cost of the trip, the total of the previous columns."
+        data_type: "number"
+       
+      - name: payment_type
+        description: "Type of payment for the trip."
+        data_type: "text"
+      
+      - name: company
+        description: "The taxi company."
+        data_type: "text"
+       
+      - name: pickup_centroid_latitude
+        description: "The latitude of the center of the pickup census tract or the community area if the census tract has been hidden for privacy. This column often will be blank for locations outside Chicago."
+        data_type: "number"
+       
+      - name: pickup_centroid_longitude
+        description: "The longitude of the center of the pickup census tract or the community area if the census tract has been hidden for privacy. This column often will be blank for locations outside Chicago."
+        data_type: "number"
+      
+      - name: pickup_centroid_location
+        description: "The location of the center of the pickup census tract or the community area if the census tract has been hidden for privacy. This column often will be blank for locations outside Chicago."
+        data_type: "point"
+     
+      - name: dropoff_centroid_latitude
+        description: "The latitude of the center of the dropoff census tract or the community area if the census tract has been hidden for privacy. This column often will be blank for locations outside Chicago."
+        data_type: "number"
+       
+      - name: dropoff_centroid_longitude
+        description: "The longitude of the center of the dropoff census tract or the community area if the census tract has been hidden for privacy. This column often will be blank for locations outside Chicago."
+        data_type: "number"
+       
+      - name: dropoff_centroid_location
+        description: "The location of the center of the dropoff census tract or the community area if the census tract has been hidden for privacy. This column often will be blank for locations outside Chicago."
+        data_type: "point"
+       
