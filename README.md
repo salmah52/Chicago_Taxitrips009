@@ -256,7 +256,7 @@ In conclusion, this ELT data pipeline lays the groundwork for a robust data anal
 # Reproducibility
 # Running the Pipeline
 - Clone the repository: git clone https://github.com/salmah52/chicagotaxitrips.git
-- Navigate to the project directory: cd chicagotaxitrips
+- Navigate to the project directory: cd project01-zoomcamp
 - Set up Airflow with the provided airflow.cfg configuration.
 - Run the following command to start Airflow: airflow webserver -p 8080
 - Access Airflow UI in your browser: http://localhost:8080
