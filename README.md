@@ -4,6 +4,9 @@
 
 This project focuses on building a comprehensive Extract, Load, Transform (ELT) data pipeline to collect information from the Chicago Data Portal's Taxi Trips dataset using API. The extracted data is then loaded into a PostgreSQL database, transferred to a Google Cloud Storage (GCS) bucket, and finally moved to BigQuery.
 
+## Problem Description
+The project aims to address the need for a scalable and efficient data pipeline to process and analyze taxi trips data from the City of Chicago. By automating the extraction, loading, and transformation processes, the pipeline provides a structured and optimized dataset in Google BigQuery for advanced analytics and reporting.The project is developed in the cloud, leveraging Google Cloud Platform (GCP) services such as Google Cloud Storage and BigQuery.
+
 ## Data Architecture
 
 A robust data architecture is crucial for ensuring data quality, integrity, and accessibility. Here's the architecture for my Chicago Data Pipeline:
@@ -26,8 +29,9 @@ A robust data architecture is crucial for ensuring data quality, integrity, and 
 
 4. **Data Transformation:**
    - dbt (Data Build Tool) for data modeling, transformation, and analytics
-   - Data Reporting and Visualization:
-     - Business Intelligence (BI) tools - PowerBI for Reporting and Visualisation
+
+5. **Data Reporting and Visualisation:**
+   - PowerBI for Reporting and Visualisation
 
 ## Dataset Description
 
@@ -96,7 +100,6 @@ Transfer the data from a PostgreSQL database to Google Cloud Storage (GCS) as a 
 # Bigquery
 
 ![image](https://github.com/salmah52/chicagotaxitrips/assets/44398948/4e1ed0ce-b010-4b0f-9d8e-b24b0314afc1)
-
 
 
 ## STEP 3- Transformation Layer and Analytics Modeling (dbt Implementation)
@@ -198,6 +201,14 @@ These Metrics models provide valuable insights into revenue trends, average reve
 <img width="1124" alt="image" src="https://github.com/salmah52/chicagotaxitrips/assets/44398948/4cbd00c7-f9f1-43bd-abdc-f9f23c496923">
 
 
+## Dashboard
+A PowerBI dashboard provides insights into the taxi trips data:
+Tiles:
+- Revenue trends
+- Trip counts by hour, day, month
+- Customer retention rates
+- Popular pickup and drop-off locations
+
 ## Why This Approach
 
 - **Custom Operator:**
@@ -238,7 +249,16 @@ As the project evolves, there is potential for further extensions and optimizati
 
 - Real-Time Data Processing: Exploring options for real-time data processing to enable more timely analytics.
 
-- Enhanced Visualization: Integrating additional business intelligence (BI) tools or refining existing visualizations for more intuitive and actionable insights.
 
 In conclusion, this ELT data pipeline lays the groundwork for a robust data analytics ecosystem. It not only addresses current analytical needs but also positions the project for future enhancements and evolving data requirements. The project's modular and scalable design ensures its adaptability to the dynamic landscape of data analytics.
+
+
+# Reproducibility
+# Running the Pipeline
+- Clone the repository: git clone https://github.com/salmah52/chicagotaxitrips.git
+- Navigate to the project directory: cd chicagotaxitrips
+- Set up Airflow with the provided airflow.cfg configuration.
+- Run the following command to start Airflow: airflow webserver -p 8080
+- Access Airflow UI in your browser: http://localhost:8080
+- Trigger the taxitrips_extraction_dag DAG to start the pipeline.
 
