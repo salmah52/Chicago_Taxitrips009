@@ -92,8 +92,7 @@ This is the overview of the dbt (data build tool) project for the Chicago Taxi T
 
 ## Data Modelling
 
-![Data Modelling](https://github.com/salmah52/chicagotaxitrips/assets/44398948/7c934379-7e29-4978-9bd7-853c7a82889b")
-
+<img width="630" alt="image" src="https://github.com/salmah52/project01-zoomcamp/assets/44398948/f8884f24-3aad-476b-86ce-7ac02e4a15dd">
 
 ### Project Structure
 
@@ -164,7 +163,8 @@ These Metrics models provide valuable insights into revenue trends, average reve
   
 # Lineage Graph
 
-<img width="1076" alt="image" src="https://github.com/salmah52/chicagotaxitrips/assets/44398948/0b08ff25-7c0c-49f8-b31b-486a3ce3f543">
+<img width="643" alt="image" src="https://github.com/salmah52/project01-zoomcamp/assets/44398948/7aba35fd-9b3c-4ebe-aabf-424d47330f95">
+
 
 
 ### Tests
