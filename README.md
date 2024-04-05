@@ -94,10 +94,6 @@ This is the overview of the dbt (data build tool) project for the Chicago Taxi T
 
 <img width="630" alt="image" src="https://github.com/salmah52/project01-zoomcamp/assets/44398948/f8884f24-3aad-476b-86ce-7ac02e4a15dd">
 
-<img width="630" alt="image" src="https://github.com/salmah52/chicagotaxitrips/assets/44398948/7c934379-7e29-4978-9bd7-853c7a82889b">
-
-![Data Modelling](https://github.com/salmah52/chicagotaxitrips/assets/44398948/7c934379-7e29-4978-9bd7-853c7a82889b")
-
 ### Project Structure
 
 The dbt project is organized into the following directories:
