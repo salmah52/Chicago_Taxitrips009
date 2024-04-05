@@ -23,7 +23,7 @@ dag = DAG(
     'taxitrips_extraction_dag00099',
     default_args=default_args,
     description='DAG to extract data from Chicago taxi trips API and load into PostgreSQL',
-    start_date=datetime(2023, 11, 27),
+    start_date=datetime(2024, 04, 01),
     schedule_interval=timedelta(days=1),  # Adjust the schedule as needed
 )
 
