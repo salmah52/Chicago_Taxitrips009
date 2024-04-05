@@ -81,14 +81,6 @@ This code defines an Airflow Directed Acyclic Graph (DAG) to orchestrate the dat
   - Specifies the order in which tasks should be executed. In this case, the DAG starts with `start_task`, followed by `extract_and_load_task`, and finally `end_task`.
 
 
-## Jobs Workflow
-
-![image](https://github.com/salmah52/chicagotaxitrips/assets/44398948/80d4d65b-4389-4dc7-af03-d5b3a2968778)
-
-# GCS Bucket
-
-<img width="927" alt="image" src="https://github.com/salmah52/chicagotaxitrips/assets/44398948/71d78b2e-5ad1-4989-a393-78e4196f28a4">
-
 ## STEP 2- Data Transformation and Integration (ELT Pipeline):
 
 Transfer the data from a PostgreSQL database to Google Cloud Storage (GCS) as a data lake and subsequently loading it into Google BigQuery for advanced analytics.
@@ -195,10 +187,6 @@ These Metrics models provide valuable insights into revenue trends, average reve
 
 2. **Metric Accuracy Tests (metric_accuracy_tests):**
    - Validates the accuracy of calculated metrics in revenue, usage, customer, and geospatial models.
-  
-## dbtCloudJobRunOperator 
-
-<img width="1124" alt="image" src="https://github.com/salmah52/chicagotaxitrips/assets/44398948/4cbd00c7-f9f1-43bd-abdc-f9f23c496923">
 
 
 ## Dashboard
@@ -222,6 +210,7 @@ Tiles:
 
 This design promotes modularity, making it easy to extend the pipeline for future stages and modifications. The DAG provides a visual representation of the workflow, making it comprehensible and adaptable to changing requirements.
 
+
 ## Conclusion
 
 The completion of the ELT data pipeline for Chicago Taxi Trips marks a significant milestone in enhancing data processing efficiency and unlocking advanced analytics capabilities. This project seamlessly integrates data from the Chicago Data Portal's Taxi Trips API into a structured format, ready for insightful analytics. Here are key takeaways:
@@ -235,23 +224,12 @@ The completion of the ELT data pipeline for Chicago Taxi Trips marks a significa
 
 - Scalability and Containerization: The Docker-ready design of the project facilitates easy deployment and scalability. This approach aligns with modern containerization practices, ensuring adaptability to changing infrastructure requirements.
 
+In conclusion, this ELT data pipeline lays the groundwork for a robust data analytics ecosystem. It not only addresses current analytical needs but also positions the project for future enhancements and evolving data requirements. The project's modular and scalable design ensures its adaptability to the dynamic landscape of data analytics.
 # Challenges Overcome
 
 - Dynamic API Configuration: Implementing a custom operator with dynamic API configuration allows users to specify API details, order, and parameters during instantiation. This ensures the pipeline's adaptability to changes in the data source.
 
 - Comprehensive Analytics Modeling: The dimensional modeling approach using dbt enables the creation of structured analytics-ready tables. This provides a solid foundation for generating diverse metrics and analytics insights.
-
-# Future Extensions
-
-As the project evolves, there is potential for further extensions and optimizations:
-
-- Additional Analytics Models: Introducing more dbt analytics models to address specific business questions and provide deeper insights.
-
-- Real-Time Data Processing: Exploring options for real-time data processing to enable more timely analytics.
-
-
-In conclusion, this ELT data pipeline lays the groundwork for a robust data analytics ecosystem. It not only addresses current analytical needs but also positions the project for future enhancements and evolving data requirements. The project's modular and scalable design ensures its adaptability to the dynamic landscape of data analytics.
-
 
 # Reproducibility
 # Running the Pipeline
