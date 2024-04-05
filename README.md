@@ -85,15 +85,6 @@ This code defines an Airflow Directed Acyclic Graph (DAG) to orchestrate the dat
 
 Transfer the data from a PostgreSQL database to Google Cloud Storage (GCS) as a data lake and subsequently loading it into Google BigQuery for advanced analytics.
 
-# Dags
-
-![image](https://github.com/salmah52/chicagotaxitrips/assets/44398948/501ab48b-fa86-4cc7-bcc7-6ceab5ed2a71)
-
-# Bigquery
-
-![image](https://github.com/salmah52/chicagotaxitrips/assets/44398948/4e1ed0ce-b010-4b0f-9d8e-b24b0314afc1)
-
-
 ## STEP 3- Transformation Layer and Analytics Modeling (dbt Implementation)
 
 This is the overview of the dbt (data build tool) project for the Chicago Taxi Trips dataset. The project follows a dimensional modeling approach to transform raw data into a structured analytics-ready format. The primary objectives include creating dimension and fact tables, generating diverse metrics, and implementing tests for data accuracy and reliability.
