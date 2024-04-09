@@ -165,6 +165,9 @@ These Metrics models provide valuable insights into revenue trends, average reve
 
 <img width="643" alt="image" src="https://github.com/salmah52/project01-zoomcamp/assets/44398948/7aba35fd-9b3c-4ebe-aabf-424d47330f95">
 
+<img width="622" alt="image" src="https://github.com/salmah52/project01-zoomcamp/assets/44398948/3e791b86-0039-4b1f-a502-81e4d065a310">
+
+
 
 
 ### Tests
