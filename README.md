@@ -11,8 +11,7 @@ The project aims to address the need for a scalable and efficient data pipeline 
 
 A robust data architecture is crucial for ensuring data quality, integrity, and accessibility. Here's the architecture for my Chicago Data Pipeline:
 
-![Data Architecture](https://github.com/salmah52/project01-zoomcamp/assets/44398948/972c8d44-4a1d-4333-9319-49665edf5202)
-
+![Data Architecture](https://github.com/salmah52/project01-zoomcamp/assets/44398948/a85050dd-3f5d-4cc9-a865-073e24631246)
 
 
 1. **Data Source:**
