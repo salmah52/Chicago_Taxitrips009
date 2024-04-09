@@ -163,15 +163,7 @@ These Metrics models provide valuable insights into revenue trends, average reve
   
 # Lineage Graph
 
-![Lineage Graph](https://github.com/salmah52/project01-zoomcamp/assets/44398948/7aba35fd-9b3c-4ebe-aabf-424d47330f95")
-
-<img width="622" alt="image" src="https://github.com/salmah52/project01-zoomcamp/assets/44398948/3e791b86-0039-4b1f-a502-81e4d065a310">
-
-
-![Data Architecture](https://github.com/salmah52/chicagotaxitrips/assets/44398948/cd0f92d6-4158-408b-92c7-e9487eda8333")
-
-
-
+![Lineage Graph](https://github.com/salmah52/project01-zoomcamp/assets/44398948/3e791b86-0039-4b1f-a502-81e4d065a310")
 
 ### Tests
 
